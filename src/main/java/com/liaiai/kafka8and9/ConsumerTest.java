@@ -15,6 +15,7 @@ public class ConsumerTest implements Runnable  {
         m_stream = a_stream;
     }
 
+    @Override
     public void run() {
         ConsumerIterator<byte[], byte[]> it = m_stream.iterator();
         while (it.hasNext()){
